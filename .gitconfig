@@ -1,0 +1,55 @@
+[alias]
+    # Credit: http://blog.blindgaenger.net/advanced_git_aliases.html
+    # Prints a list of all defined aliases, including itself
+    alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
+
+    # Credit: https://coderwall.com/p/euwpig/a-better-git-log 
+    # A much nicer-looking git log
+    # TODO: Add some more padding to this - still a little messy
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[color]
+    branch      = true
+    diff        = true
+    interactive = true
+    ui          = true
+
+[commit]
+    verbose = true
+
+[core]
+    compression  = 9
+    editor       = vim
+    excludesfile = ~/.gitignore_global
+    pager        = less
+    whitespace   = trailing-space, space-before-tab
+
+[diff]
+    tool = vimdiff
+
+[difftool]
+    prompt = false
+
+[fetch]
+    # Auto-fetch submodule changes
+    recurseSubmodules = true
+
+[grep]
+    lineNumber = true
+
+[i18n]
+    commitencoding = utf-8
+    logoutputencoding = utf-8
+
+[log]
+    decorate = auto
+
+[pull]
+    rebase = true
+
+[push]
+    # Default push only pushes the current branch to its upstream
+    default = upstream
+
+    # Push tags everytime
+    followTags = true

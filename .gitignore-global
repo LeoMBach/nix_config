@@ -1,0 +1,9 @@
+# Mac junk
+.DS_Store
+
+# Private files
+*.pem
+
+# Temp files
+*.swp
+*.tmp
