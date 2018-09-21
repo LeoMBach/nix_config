@@ -1,8 +1,6 @@
 #!/bin/bash
 
-cp .bashrc $HOME
-cp .gitconfig $HOME
-cp .gitignore-global $HOME
-cp .screenrc $HOME
-cp .tmux.conf $HOME
-cp .vimrc $HOME
+dotfiles="$(find .* -maxdepth 0 -type f)"
+for dot in $dotfiles; do
+    cp -vf $dot $HOME/$dot
+done;
