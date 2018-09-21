@@ -1,0 +1,13 @@
+ThemeFile=xterm
+Transparency=medium
+OpaqueWhenFocused=yes
+CursorType=block
+FontSmoothing=full
+Locale=en_US
+Charset=UTF-8
+BoldAsFont=yes
+Rows=32
+Term=xterm-256color
+BellType=0
+Font=Source Code Pro for Powerline
+FontHeight=12
