@@ -16,7 +16,9 @@ fi
 ###########
 
 alias ls="ls --color=auto"
+alias la="ls -a"
 alias ll="ls -lh"
+alias lla="ls -lha"
 alias grep="grep --color"
 
 ##########
