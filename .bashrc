@@ -11,6 +11,18 @@ if [ -f /etc/bach_completion ]; then
     . /etc/bash_completion
 fi
 
+###############
+# Environment #
+###############
+export EDITOR=nvim
+export TERM=xterm-256color # Needed for tmux
+
+###################
+# bash-git-prompt #
+###################
+GIT_PROMPT_ONLY_IN_REPO=1
+. ~/.bash-git-prompt/gitprompt.sh
+
 ###########
 # Aliases #
 ###########
