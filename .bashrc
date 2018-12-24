@@ -23,6 +23,11 @@ export TERM=xterm-256color # Needed for tmux
 GIT_PROMPT_ONLY_IN_REPO=1
 . ~/.bash-git-prompt/gitprompt.sh
 
+#####################
+# Hetzner Cloud CLI #
+#####################
+. ~/autocomplete/hcloud*
+
 ###########
 # Aliases #
 ###########
