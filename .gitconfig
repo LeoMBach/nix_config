@@ -12,6 +12,18 @@
     # Prints the git root folder
     root = rev-parse --show-toplevel
 
+    # Credit: https://git.wiki.kernel.org/index.php/Aliases #
+    #########################################################
+
+    # Prints information about the provided author
+    whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
+
+    # Edit and add merge conflicts automatically
+    edit-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; vim `f`"
+    add-unmerged = "!f() { git diff --name-status --diff-filter=U | cut -f2 ; }; git add `f`"
+
+    #########################################################
+
 [color]
     branch      = true
     diff        = true
