@@ -8,6 +8,10 @@
     # TODO: Add some more padding to this - still a little messy
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
+    # Credit: https://github.com/brauliobo/gitconfig/blob/master/configs/.gitconfig
+    # Prints the git root folder
+    root = rev-parse --show-toplevel
+
 [color]
     branch      = true
     diff        = true
