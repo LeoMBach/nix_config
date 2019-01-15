@@ -46,6 +46,11 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+" Configure tabs to be 2 spaces for particular filetypes
+autocmd FileType html       :setlocal sw=2 ts=2 sts=2
+autocmd FileType javascript :setlocal sw=2 ts=2 sts=2
+autocmd FileType yaml       :setlocal sw=2 ts=2 sts=2
+
 " Set backspace to work like in most applications
 set backspace=eol,start,indent
 
