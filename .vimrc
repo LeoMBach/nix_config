@@ -67,9 +67,6 @@ set foldlevelstart=10
 set foldnestmax=10 " God help me if I ever hit this number
 set foldmethod=indent
 
-" Space to open/close folds
-nnoremap <space> za
-
 " Stop error bell
 set noerrorbells
 set novisualbell
