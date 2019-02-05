@@ -99,7 +99,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'yggdroot/indentline'
 Plug 'flazz/vim-colorschemes'
 Plug 'scrooloose/syntastic'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
 Plug 'ekalinin/dockerfile.vim'
+Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
 " GUI options
