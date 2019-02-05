@@ -77,6 +77,11 @@ set nobackup
 " Set leader key to comma
 let mapleader=","
 
+" Improve diff highlighting (so that I can actually see)
+if &diff
+    highlight! link DiffText MatchParen
+endif
+
 """ Vim-Plug """
 
 " Download plug.vim if it doesn't exist
