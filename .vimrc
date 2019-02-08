@@ -94,7 +94,6 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'yggdroot/indentline'
 Plug 'flazz/vim-colorschemes'
@@ -103,6 +102,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'ekalinin/dockerfile.vim'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'sheerun/vim-polyglot'
+Plug 'valloric/youcompleteme'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
 " GUI options
@@ -121,6 +123,9 @@ endif
 let g:syntastic_check_on_open = 1
 let g:syntastic_javascript_checkers = ['closurecompiler'] 
 "let g:syntastic_javascript_closurecompiler_path = PUT UNIX PATH HERE
+
+" YouCompleteMe settings
+let g:ycm_autoclose_preview_window_after_completion = 1
 
 """ FUNCTIONS """
 
