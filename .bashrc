@@ -38,7 +38,10 @@ alias ll="ls -lh"
 alias lla="ls -lha"
 alias grep="grep --color"
 alias trm="transmission-remote"
-alias cls="clear" # Windows has ruined me
+
+# Windows has ruined me
+alias cls="clear"
+alias dir="ls -l"
 
 ##########
 # Colors #
