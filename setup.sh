@@ -1,8 +1,8 @@
 #!/bin/bash
 
-dotfiles="$(find .* -maxdepth 0 -type f)"
+dotfiles="$(find ./dotfiles/.* -maxdepth 0 -type f -printf '%f\n')"
 for dot in $dotfiles; do
-    cp -vf $dot $HOME/$dot
+    cp -vf ./dotfiles/$dot $HOME/$dot
 done;
 
 if [ ! -d ~/.mintty/themes ]; then
